@@ -1,0 +1,250 @@
+/* 버튼 기본 스타일 */
+.btn {
+  background-color: #abd9ff; /* 초록색 배경 */
+  color: #333; /* 글자 색은 흰색 */
+  border: none; /* 테두리 없음 */
+  padding: 15px 32px; /* 상하, 좌우 패딩 */
+  text-align: center; /* 글자 가운데 정렬 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  display: inline-block; /* 인라인 블록 요소 */
+  font-size: 16px; /* 글자 크기 */
+  margin: 4px 2px; /* 버튼 간격 */
+  cursor: pointer; /* 커서를 포인터로 변경 */
+  border-radius: 8px; /* 둥근 모서리 */
+  transition: background-color 0.3s, transform 0.2s; /* 부드러운 효과 */
+}
+
+/* 버튼 호버 시 효과 */
+.btn:hover {
+  background-color: #c0e5ff; /* 호버 시 색상 변경 */
+}
+
+#selfIntro {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#selfIntro .division {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+#selfIntro h3 {
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #8dc4ff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+#selfIntro ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#selfIntro ul li {
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+#selfIntro p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#selfIntro p:last-child {
+  margin-bottom: 0;
+}
+
+#selfIntro .division p {
+  text-align: justify;
+}
+
+#selfIntro .division h3 {
+  margin-top: 0;
+}
+
+#selfIntro .division:first-child {
+  background-color: #e9ecef;
+  padding: 15px;
+}
+
+#selfIntro .division ul {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+#selfIntro .division ul li {
+  font-size: 1em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  #selfIntro {
+    padding: 10px;
+  }
+
+  #selfIntro .division {
+    padding: 15px;
+  }
+
+  #selfIntro h3 {
+    font-size: 1.2em;
+  }
+
+  #selfIntro p {
+    font-size: 1em;
+  }
+
+  #selfIntro ul li {
+    font-size: 1.1em;
+  }
+}
+
+/* Selfintro.css */
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 150px; /* 적절한 크기로 조정 */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2rem;
+  border: 3px solid #abd3fc; /* 이미지 테두리 추가 */
+  cursor: pointer; /* 마우스 포인터를 변경 */
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1); /* 부드러운 전환 */
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* 조금 더 확대 */
+}
+
+
+.profile-details {
+  flex: 1;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.selfintrop {
+  color: #555;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.introduce-container {
+  padding: 2rem;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+
+.introduce-container h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.introduce-container .selfintrop {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.3rem 0;
+}
+
+.blog-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.time-container {
+  max-width: 840px;
+  border-radius: 10px;
+  background-color: #f5f7fa;
+  padding: 10px;
+  text-align: center;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-time {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+/* 모달 배경 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 모달 내용 */
+.modal-content {
+  bottom: 150px;
+  position: relative;
+  max-width: 30%;
+  max-height: 30%;
+  background: transparent;
+}
+
+/* 닫기 버튼 */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* 모달 이미지 */
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

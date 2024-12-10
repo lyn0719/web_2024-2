@@ -1,0 +1,182 @@
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 10fr;
+  display: flex;
+}
+
+fieldset{
+  width: 90%;
+  border: 2px solid #8fc7ff; /* 테두리 색상 */
+  border-radius: 8px; /* 둥근 모서리 */
+  padding: 10px;
+}
+
+.h1text{
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.pjcontainer{
+  margin-left: 3rem;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333; /* 텍스트 색상 */
+  padding: 5px 10px;
+  border: 1px solid #8fc7ff;
+  border-radius: 5px;
+  background-color: #abd3fc;
+}
+
+/* 버튼 기본 스타일 */
+.btn {
+  background-color: #abd9ff; /* 초록색 배경 */
+  color: #333; /* 글자 색은 흰색 */
+  border: none; /* 테두리 없음 */
+  padding: 15px 32px; /* 상하, 좌우 패딩 */
+  text-align: center; /* 글자 가운데 정렬 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  display: inline-block; /* 인라인 블록 요소 */
+  font-size: 16px; /* 글자 크기 */
+  margin: 4px 2px; /* 버튼 간격 */
+  cursor: pointer; /* 커서를 포인터로 변경 */
+  border-radius: 8px; /* 둥근 모서리 */
+  transition: background-color 0.3s, transform 0.2s; /* 부드러운 효과 */
+}
+
+/* 버튼 호버 시 효과 */
+.btn:hover {
+  background-color: #c0e5ff; /* 호버 시 색상 변경 */
+}
+
+/* ///////////////////////////// */
+
+/* 프로젝트 컨테이너 스타일 */
+.pjcontainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 프로젝트 제목 */
+.h1text {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d3b45;
+  margin-bottom: 1rem;
+}
+
+/* 프로젝트 이미지 */
+.project-image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* fieldset 스타일 */
+.project-overview {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.project-overview legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b4a6f;
+}
+
+/* 다크모드에서의 프로젝트 개요 스타일 */
+body.dark .project-overview p,
+body.dark .project-overview ul {
+  color: #3b4a6f;
+}
+
+body.dark .project-overview li {
+  color: #3b4a6f;
+}
+
+/* 프로젝트 세부 사항 섹션 */
+.project-details {
+  margin-top: 2rem;
+}
+
+.project-section {
+  margin-bottom: 2rem;
+}
+
+.project-section h3 {
+  font-size: 1.8rem;
+  color: #3b4a6f;
+  margin-bottom: 1rem;
+}
+
+.project-section ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.project-section li {
+  font-size: 1rem;
+  color: #5f6d7a;
+  line-height: 1.6;
+}
+
+/* 프로젝트 결과 및 느낀 점 */
+.project-outcome {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.project-outcome h2 {
+  font-size: 2rem;
+  color: #2d3b45;
+  margin-bottom: 1rem;
+}
+
+.project-outcome p {
+  font-size: 1rem;
+  color: #5f6d7a;
+  line-height: 1.6;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .pjcontainer {
+    width: 90%;
+  }
+
+  .h1text {
+    font-size: 2rem;
+  }
+
+  .project-image {
+    width: 80%;
+  }
+
+  .project-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-section ul {
+    margin-left: 1.5rem;
+  }
+
+  .project-outcome h2 {
+    font-size: 1.8rem;
+  }
+}
